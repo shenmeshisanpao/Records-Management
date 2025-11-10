@@ -132,13 +132,13 @@ class DatabaseManager:
 class CustomSplashScreen(QSplashScreen):
     def __init__(self):
         # 创建一张空的图片
-        pixmap = QPixmap(500, 300)
+        pixmap = QPixmap(700, 300)
         pixmap.fill(Qt.transparent)
         super().__init__(pixmap, Qt.WindowStaysOnTopHint | Qt.FramelessWindowHint)
-        self.setFixedSize(500, 300)
+        self.setFixedSize(700, 300)
         
         # 设计者信息
-        self.designer_info = "github.com/shenmeshisanpao"
+        self.designer_info = "github.com/shenmeshisanpao/Records-Management"
         self.app_title = "记录管理系统"
         self.loading_info = "正在初始化程序..."
         self.progress = 0  # 添加进度属性
